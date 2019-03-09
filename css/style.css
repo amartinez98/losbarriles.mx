@@ -1,0 +1,139 @@
+body{
+	margin: 0;
+	font-family: 'EngraversGothic BT', cursive;
+	
+}
+.main {
+  padding: 0px;
+  margin-top: 0px;
+  height: 1500px; 
+  /* Used in this example to enable scrolling */
+}
+.inicio{
+	background-color: white;
+	color: #023382;
+	width: 100%;	
+	text-align: center;
+	font-weight: 100;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.welcome{
+	margin: 0 auto;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.main-header{
+	background-color: #32618D;
+	padding: 10px;
+	text-align: center;
+}
+
+.main-menu{
+	margin: 0;
+	text-align: center;	
+	background-color: #023382;
+	padding: 1px;
+}
+
+.main-menu ul li{
+	display: inline-block;
+	margin: 12px 10px;
+	list-style: none;
+	margin: 0;
+}
+.main-menu ul li a{
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 5px;
+	transition: all 0.2s ease-out;
+	font-size: 20px;
+}
+.main-menu a:hover{
+	color: #023382;
+	transition: 0.5s ease-out;
+	background-color: white;
+}
+
+* {box-sizing: border-box}	
+.container{
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+.image{
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+.image-large {
+	width: 100%;
+}
+.title1 h1{
+	text-align: center;
+}
+.overlay{
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgb(0, 0, 0);
+	background: rgb(140, 147, 158, .8); /* Black see-through */
+	color: white; 
+	width: 100%;
+	height: auto;
+	transition: 1s ease;
+	opacity:0;
+	color: white;
+	font-size: 25px;
+	padding: 50px;
+	text-align: center;
+	font-family: 'EngraversGothic BT', cursive;
+}
+.container:hover .overlay{
+	opacity: 0.8;
+}
+
+
+@media screen and (max-width: 1200px){
+	
+
+}
+
+@media screen and (max-width: 768px){
+
+	body{
+		
+	}
+	
+}
+
+@media screen and (max-width: 480px){
+	.main-header{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.main-header img{
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.main-menu ul li{
+		display: block;
+		padding: 0;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+	.main-menu ul{
+		padding-left: 0;
+	}
+	.container{
+		width: 100%;
+	}
+	.inicio{
+		width: 100%;
+	}
+}

@@ -1,0 +1,63 @@
+<!-- 
+*** geolocation.html-version 0.1 de prueba (aún no ha sido evaluada para errores o modificaciones)-21/02/2019-copyright Derechos Reservados losbarriles.mx solo podrá ser modificado y distribuido por trabajadores propios de la empresa, cualquier uso por partes ajenas, de cualquiera de los codigos aqui utilizados tendrá sancion ante la autoridad correspondiente.
+@losbarriles.mx
+Angel Martinez
+***-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        margin: 0 auto; 
+        height: 500px;  /* The height is 400 pixels */
+        width: 90%;  /* The width is the width of the web page */
+        margin-bottom: 50px;
+       }
+    </style>
+  </head>
+  <body>
+    
+  <div class="main-header">
+    <img src="images/logo5.1.png">
+  </div>
+
+  <nav class="main-menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="geolocation.html">Ubicación</a></li>
+      <li><a href="hoteles.html">Hoteles</a></li>
+      <li><a href="restaurantes.html">Restaurantes</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+    </ul>
+  </nav>
+
+  <div class="inicio">
+    <h1 class="welcome">Ubicación</h1>
+  </div>
+   
+    <!--The div element for the map 23.683194, -109.698187 -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 23.683194, lng: -109.698187};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvKtxDUDvtfkHuN6r05Iu0OsDXNy2lIWc&callback=initMap">
+    </script>
+  </body>
+</html>
