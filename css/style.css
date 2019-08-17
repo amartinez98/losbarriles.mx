@@ -29,6 +29,9 @@ body{
 	padding: 10px;
 	text-align: center;
 }
+.main-header img{
+	width: 20%;
+}
 
 .main-menu{
 	margin: 0;
@@ -59,8 +62,12 @@ body{
 * {box-sizing: border-box}	
 .container{
 	position: relative;
-	width: 75%;
+	text-align: center;
+	width: 45%;
 	margin: 0 auto;
+	margin-bottom: 25px;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image{
 	display: inline-block;
@@ -79,14 +86,14 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background: rgb(0, 0, 0);
-	background: rgb(140, 147, 158, .8); /* Black see-through */
+	background: rgb(89, 92, 97, .9); /* Black see-through */
 	color: white; 
 	width: 100%;
 	height: auto;
 	transition: 1s ease;
 	opacity:0;
 	color: white;
-	font-size: 25px;
+	font-size: 35px;
 	padding: 50px;
 	text-align: center;
 	font-family: 'EngraversGothic BT', cursive;
@@ -94,7 +101,9 @@ body{
 .container:hover .overlay{
 	opacity: 0.8;
 }
-
+.img-container{
+	text-align: center;
+}
 
 @media screen and (max-width: 1200px){
 	
