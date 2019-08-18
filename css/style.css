@@ -96,7 +96,7 @@ body{
 	font-size: 35px;
 	padding: 50px;
 	text-align: center;
-	font-family: 'EngraversGothic BT', cursive;
+	font-family: 'EngraversGothic BT';
 }
 .container:hover .overlay{
 	opacity: 0.8;
